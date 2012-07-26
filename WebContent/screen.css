@@ -1,0 +1,232 @@
+@charset "UTF-8";
+/* ----------------- ALL ---------------- */
+html,body {
+	padding: 0px;
+	margin: 0px;
+	border:0px;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: auto;
+	font-family: "lucida grande", Verdana, Geneva, Tahoma, Trebuchet MS, Arial, Sans-serif;
+	position: relative;
+	z-index: 1;
+}
+
+div,p,a,li,ol,ul,fieldset,label,dl,dt,dd,h1,h2,h3,h4,h5,h6,pre {
+	margin:0px;
+	padding:0px;
+	border: 0px;
+}
+
+#header {
+	background: #cfc;
+	box-shadow: 0px 5px 10px #2a2;
+	position: fixed;
+	width: 100%;
+}
+
+#header h1 {
+	text-align: left;
+	padding: 20px;
+	color: #272;
+	text-shadow: 3px 3px 3px #999;
+	font-size: 30px;
+	height: 60px;
+	line-height: 60px;
+}
+
+
+#body_content {
+	margin-top: 120px;
+}
+
+#body_content h2 {
+	margin: 15px;
+	margin-left: 20px;
+	text-shadow: 2px 2px 1px #aaa;
+}
+
+#menu {
+	list-style: none;
+	float: right;
+	width: 280px;
+	background: #6a6;
+	border-left: 10px solid #6c6;
+}
+
+#menu li {
+	text-align: right;
+	width: 280px;
+	line-height: 25px;
+	height: 25px;
+}
+
+#menu a, #menu a:link, #menu a:hover, #menu a:visited, #menu a:active {
+	color: #fff;
+	font-weight: bold;
+	text-decoration: none;
+	display: block;
+	line-height: 25px;
+	padding-right: 10px;
+	-webkit-transition: all 0.3s ease-in-out;
+}
+
+#menu a:hover, #menu a.current {
+	background: #262;
+}
+
+#content {
+	margin: 10px;
+}
+
+#content table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+#content td, #content th {
+	font-size: 0.7em;
+	text-align: center;
+}
+
+#content th:not(:first-child), #content td:not(:first-child) {
+	border-left: 1px solid #aaa;
+}
+
+#content th {
+	background: #666;
+	color: #fff;
+	font-size: 0.8em;
+	padding: 5px;
+}
+
+#content td {
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+#content th:first-child {
+	border-top-left-radius: 10px;
+}
+
+#content th:last-child {
+	border-top-right-radius: 10px;
+}
+
+#content tr:last-child td:first-child {
+	border-bottom-left-radius: 10px;
+}
+
+#content tr:last-child td:last-child {
+	border-bottom-right-radius: 10px;
+}
+
+.rowa {
+	background-color: #d3d3d3;
+	-webkit-transition: all 0.3s ease-in-out;
+}
+
+.rowb {
+	background-color: #eee;
+	-webkit-transition: all 0.3s ease-in-out;
+}
+
+.rowa:hover, .rowb:hover {
+	background-color: #afa;
+}
+
+
+
+/************/
+#box {
+	width: 800px;
+	padding: 20px;
+	position: absolute;
+	left: 50%;
+	margin-left: -400px;
+	top: 240px;
+	box-shadow: 0 0 10px #22a;
+	border-radius: 15px;
+	background: #ccf;
+}
+
+#box h1 {
+	text-align: center;
+	margin-bottom: 30px;
+	color: #22a;
+	text-shadow: 1px 1px 2px #22a;
+}
+
+#box form {
+	text-align: center;
+}
+
+#box form input[type=submit] {
+	display: block;
+	clear: both;
+	margin: auto;
+	margin-top: 10px;
+}
+
+#box.green {
+	background: #cfc;
+	box-shadow: 0 0 10px #2a2;
+}
+
+#box.green h1 {
+	color: #2a2;
+}
+
+#box.red {
+	background: #fcc;
+	box-shadow: 0 0 10px #a22;
+}
+
+#box.red h1 {
+	color: #a22;
+}
+
+
+/**** PULSANTI ****/
+
+input[type=button], input[type=submit], input[type=reset], button, .button, .button:visited, .button:link {
+	border-style: none;
+	background: #333;
+	background: -webkit-gradient(linear, left top, left bottom, from(#666), to(#333));
+	background: -moz-linear-gradient(top,  #666,  #333);
+	display: inline-block;
+	padding: 5px 10px 6px;
+	color: #fff !important;
+	text-decoration: none;
+	font-weight: bold;
+	line-height: 1;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+	text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+	border-bottom: 1px solid rgba(0,0,0,0.25);
+	position: relative;
+	top: -1px;
+	cursor: pointer;
+
+	background: #33a;
+	background: -webkit-gradient(linear, left top, left bottom, from(#66d), to(#33a));
+	background: -moz-linear-gradient(top,  #66d,  #33a);
+}
+input[type=button]:hover, input[type=submit]:hover, button:hover, input[type=reset]:hover, .button:hover {
+	color: #fff;
+	text-decoration: none;
+	background: #333;
+
+	background: #33a;
+}
+input[type=button]:active, input[type=submit]:active, input[type=reset]:active, button:active, .button:active {
+	top: 0px;
+	color: #fff;
+	box-shadow: 0 0 0;
+	-moz-box-shadow: 0 0 0;
+	-webkit-box-shadow: 0 0 0;
+}
